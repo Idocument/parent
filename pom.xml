@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>co.edu.uniandes.fuse.core</groupId>
+  <artifactId>parent-pom</artifactId>
+  <version>1.0.10</version>
+  <packaging>pom</packaging>
+
+	<name>UNIANDES ::: WS-REST UNIANDES-PARENT-POM</name>
+	<properties>
+		<jboss.fuse.bom.version>6.3.0.redhat-187</jboss.fuse.bom.version>
+		<version.maven-bundle-plugin>2.3.7</version.maven-bundle-plugin>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<camel.version>2.17.0.redhat-630187</camel.version>
+		<cxf.version>3.1.5.redhat-630187</cxf.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<codehaus.jackson.version>1.9.13</codehaus.jackson.version>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<spring.version>3.2.8.RELEASE</spring.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.jboss.fuse.bom</groupId>
+				<artifactId>jboss-fuse-parent</artifactId>
+				<version>${jboss.fuse.bom.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>		
+	
+	<profiles>
+		<profile>
+			<id>esb.dev-repo</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+
+			<repositories>				
+				<repository>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+					<id>esb.dev-repo</id>
+					<name>Uniandes repository</name>
+					<url>http://localhost:8080/repository/esb.dev-repo/</url>
+				</repository>
+			</repositories>
+
+			<pluginRepositories>				
+				<pluginRepository>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+					<id>esb.dev-repo</id>
+					<name>Uniandes repository</name>
+					<url>http://localhost:8080/repository/esb.dev-repo/</url>
+				</pluginRepository>
+			</pluginRepositories>
+
+			<distributionManagement>
+				<repository>
+					<id>esb.dev-repo</id>
+					<url>http://localhost:8080/repository/esb.dev-repo/</url>
+				</repository>
+				<snapshotRepository>
+					<id>esb.dev-repo</id>
+					<url>http://localhost:8080/repository/esb.dev-repo/</url>
+				</snapshotRepository>
+			</distributionManagement>
+
+		</profile>
+		<profile>
+			<id>esb.pru-repo</id>
+
+			<repositories>				
+				<repository>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+					<id>esb.pru-repo</id>
+					<name>Uniandes repository</name>
+					<url>http://localhost:8080/repository/esb.pru-repo/</url>
+				</repository>
+			</repositories>
+
+			<pluginRepositories>				
+				<pluginRepository>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+					<id>esb.pru-repo</id>
+					<name>Uniandes repository</name>
+					<url>http://localhost:8080/repository/esb.pru-repo/</url>
+				</pluginRepository>
+			</pluginRepositories>
+
+			<distributionManagement>
+				<repository>
+					<id>esb.pru-repo</id>
+					<url>http://localhost:8080/repository/esb.pru-repo/</url>
+				</repository>
+				<snapshotRepository>
+					<id>esb.pru-repo</id>
+					<url>http://localhost:8080/repository/esb.pru-repo/</url>
+				</snapshotRepository>
+			</distributionManagement>
+		</profile>
+		<profile>
+			<id>esb.qa-repo</id>
+
+			<repositories>				
+				<repository>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+					<id>esb.qa-repo</id>
+					<name>Uniandes repository</name>
+					<url>http://localhost:8080/repository/esb.qa-repo/</url>
+				</repository>
+			</repositories>
+
+			<pluginRepositories>				
+				<pluginRepository>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+					<id>esb.qa-repo</id>
+					<name>Uniandes repository</name>
+					<url>http://localhost:8080/repository/esb.qa-repo/</url>
+				</pluginRepository>
+			</pluginRepositories>
+
+			<distributionManagement>
+				<repository>
+					<id>esb.qa-repo</id>
+					<url>http://localhost:8080/repository/esb.qa-repo/</url>
+				</repository>
+				<snapshotRepository>
+					<id>esb.qa-repo</id>
+					<url>http://localhost:8080/repository/esb.qa-repo/</url>
+				</snapshotRepository>
+			</distributionManagement>
+		</profile>
+		<profile>
+			<id>esb.pro-repo</id>
+
+			<repositories>				
+				<repository>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+					<id>esb.pro-repo</id>
+					<name>Uniandes repository</name>
+					<url>http://localhost:8080/repository/esb.pro-repo/</url>
+				</repository>
+			</repositories>
+
+			<pluginRepositories>				
+				<pluginRepository>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+					<id>esb.pro-repo</id>
+					<name>Uniandes repository</name>
+					<url>http://localhost:8080/repository/esb.pro-repo/</url>
+				</pluginRepository>
+			</pluginRepositories>
+
+			<distributionManagement>
+				<repository>
+					<id>esb.pro-repo</id>
+					<url>http://localhost:8080/repository/esb.pro-repo/</url>
+				</repository>
+				<snapshotRepository>
+					<id>esb.pro-repo</id>
+					<url>http://localhost:8080/repository/esb.pro-repo/</url>
+				</snapshotRepository>
+			</distributionManagement>
+		</profile>
+	</profiles>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring</artifactId>
+		</dependency>	
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.springframework</groupId> -->
+<!-- 			<artifactId>spring-context-support</artifactId> -->
+<!-- 		</dependency>	 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-test-spring</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-test</artifactId>
+			<scope>test</scope>
+		</dependency>		
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-swagger</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-swagger-java</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-http4</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-jackson</artifactId>
+		</dependency>
+	</dependencies>	
+	
+	
+
+
+	<build>
+		<defaultGoal>install</defaultGoal>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+				</configuration>
+			</plugin>					
+		</plugins>
+	</build>
+
+
+</project>
