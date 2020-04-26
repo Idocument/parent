@@ -50,7 +50,7 @@
 					</snapshots>
 					<id>esb.dev-repo</id>
 					<name>Uniandes repository</name>
-					<url>http://localhost:8080/repository/esb.dev-repo/</url>
+					<url>http://localhost:8087/repository/esb.dev-repo/</url>
 				</repository>
 			</repositories>
 
@@ -64,18 +64,18 @@
 					</snapshots>
 					<id>esb.dev-repo</id>
 					<name>Uniandes repository</name>
-					<url>http://localhost:8080/repository/esb.dev-repo/</url>
+					<url>http://localhost:8087/repository/esb.dev-repo/</url>
 				</pluginRepository>
 			</pluginRepositories>
 
 			<distributionManagement>
 				<repository>
 					<id>esb.dev-repo</id>
-					<url>http://localhost:8080/repository/esb.dev-repo/</url>
+					<url>http://localhost:8087/repository/esb.dev-repo/</url>
 				</repository>
 				<snapshotRepository>
 					<id>esb.dev-repo</id>
-					<url>http://localhost:8080/repository/esb.dev-repo/</url>
+					<url>http://localhost:8087/repository/esb.dev-repo/</url>
 				</snapshotRepository>
 			</distributionManagement>
 
@@ -93,7 +93,7 @@
 					</snapshots>
 					<id>esb.pru-repo</id>
 					<name>Uniandes repository</name>
-					<url>http://localhost:8080/repository/esb.pru-repo/</url>
+					<url>http://localhost:8087/repository/esb.pru-repo/</url>
 				</repository>
 			</repositories>
 
@@ -107,18 +107,18 @@
 					</snapshots>
 					<id>esb.pru-repo</id>
 					<name>Uniandes repository</name>
-					<url>http://localhost:8080/repository/esb.pru-repo/</url>
+					<url>http://localhost:8087/repository/esb.pru-repo/</url>
 				</pluginRepository>
 			</pluginRepositories>
 
 			<distributionManagement>
 				<repository>
 					<id>esb.pru-repo</id>
-					<url>http://localhost:8080/repository/esb.pru-repo/</url>
+					<url>http://localhost:8087/repository/esb.pru-repo/</url>
 				</repository>
 				<snapshotRepository>
 					<id>esb.pru-repo</id>
-					<url>http://localhost:8080/repository/esb.pru-repo/</url>
+					<url>http://localhost:8087/repository/esb.pru-repo/</url>
 				</snapshotRepository>
 			</distributionManagement>
 		</profile>
@@ -135,7 +135,7 @@
 					</snapshots>
 					<id>esb.qa-repo</id>
 					<name>Uniandes repository</name>
-					<url>http://localhost:8080/repository/esb.qa-repo/</url>
+					<url>http://localhost:8087/repository/esb.qa-repo/</url>
 				</repository>
 			</repositories>
 
@@ -149,18 +149,18 @@
 					</snapshots>
 					<id>esb.qa-repo</id>
 					<name>Uniandes repository</name>
-					<url>http://localhost:8080/repository/esb.qa-repo/</url>
+					<url>http://localhost:8087/repository/esb.qa-repo/</url>
 				</pluginRepository>
 			</pluginRepositories>
 
 			<distributionManagement>
 				<repository>
 					<id>esb.qa-repo</id>
-					<url>http://localhost:8080/repository/esb.qa-repo/</url>
+					<url>http://localhost:8087/repository/esb.qa-repo/</url>
 				</repository>
 				<snapshotRepository>
 					<id>esb.qa-repo</id>
-					<url>http://localhost:8080/repository/esb.qa-repo/</url>
+					<url>http://localhost:8087/repository/esb.qa-repo/</url>
 				</snapshotRepository>
 			</distributionManagement>
 		</profile>
@@ -177,7 +177,7 @@
 					</snapshots>
 					<id>esb.pro-repo</id>
 					<name>Uniandes repository</name>
-					<url>http://localhost:8080/repository/esb.pro-repo/</url>
+					<url>http://localhost:8087/repository/esb.pro-repo/</url>
 				</repository>
 			</repositories>
 
@@ -191,18 +191,18 @@
 					</snapshots>
 					<id>esb.pro-repo</id>
 					<name>Uniandes repository</name>
-					<url>http://localhost:8080/repository/esb.pro-repo/</url>
+					<url>http://localhost:8087/repository/esb.pro-repo/</url>
 				</pluginRepository>
 			</pluginRepositories>
 
 			<distributionManagement>
 				<repository>
 					<id>esb.pro-repo</id>
-					<url>http://localhost:8080/repository/esb.pro-repo/</url>
+					<url>http://localhost:8087/repository/esb.pro-repo/</url>
 				</repository>
 				<snapshotRepository>
 					<id>esb.pro-repo</id>
-					<url>http://localhost:8080/repository/esb.pro-repo/</url>
+					<url>http://localhost:8087/repository/esb.pro-repo/</url>
 				</snapshotRepository>
 			</distributionManagement>
 		</profile>
